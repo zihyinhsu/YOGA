@@ -28,6 +28,7 @@ $(document).ready(function () {
 //首次體驗 下滑出"選擇課程階級"的效果
 $('.juniorLevel').click(function(){
   $('.courseList').slideToggle();
+  $('.keepReserveBtn').slideToggle();
 })
 
 //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏
