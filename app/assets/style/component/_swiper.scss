@@ -9,19 +9,6 @@
   align-items: center;
 }
 
-.swiper-course {
-  width: 165px;
-  height: 165px;
-  object-fit: cover;
-  @include media-breakpoint-up(md) {
-    width: 150px;
-    height: 150px;
-  }
-  @include media-breakpoint-up(lg) {
-    width: 445px;
-    height: 445px;
-  }
-}
 
 //Navigation
 .swiper-prev, .swiper-next {

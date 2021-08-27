@@ -9,14 +9,14 @@ current: index
       <div class="text-center mb-6">
           <h2 class="text-tertiary">立即預約</h2>
       </div> 
-      <ul class="nav nav-pills row justify-content-md-center mb-8" id="pills-tab" role="tablist">
-        <li class="nav-item col-4 col-lg-2" role="presentation">
+      <ul class="revervationNav nav nav-pills row justify-content-md-center mb-8" id="pills-tab" role="tablist">
+        <li class="projectBtn nav-item col-4 col-lg-2" role="presentation">
           <a href="#" class="btn btn-primary hoverBtnTertiary rounded-4 py-3 w-100 active" id="chooseProject-tab" data-bs-toggle="tab" data-bs-target="#chooseProject" role="tab" aria-controls="chooseProject" aria-selected="true">選擇方案</a>
         </li>
-        <li class="nav-item col-4 col-lg-2" role="presentation">
+        <li class="fillDataBtn nav-item col-4 col-lg-2" role="presentation">
           <a href="#" class="btn btn-primary hoverBtnTertiary rounded-4 py-3 w-100" id="fillData-tab" data-bs-toggle="pill" data-bs-target="#fillData"  role="tab" aria-controls="fillData" aria-selected="false">填寫資料</a>
         </li>
-        <li class="nav-item col-4 col-lg-2" role="presentation">
+        <li class="reserveBtn nav-item col-4 col-lg-2" role="presentation">
           <a href="#" class="btn btn-primary hoverBtnTertiary rounded-4 py-3 w-100" id="reserve-tab" data-bs-toggle="pill" data-bs-target="#reserve" role="tab" aria-controls="reserve" aria-selected="false">完成預約</a>
         </li>
       </ul>
@@ -186,11 +186,11 @@ current: index
 
         </div>
         <div class="tab-pane fade" id="reserve" role="tabpanel" aria-labelledby="reserve-tab">
+           <!-- 完成預約 -->
           <div class="text-center mb-8">
             <i class="far fa-check-circle fa-2-5x text-tertiary mb-5"></i>
             <h4 class="text-tertiary">已完成預約，以下是您的預約資訊:</h4>
           </div>
-          <!-- 預約資訊 -->
           <div class="row justify-content-center mb-6">
             <div class="col-md-8 col-lg-6">
               <div class="card rounded-3 border-secondary d-flex justify-content-between">
@@ -210,6 +210,8 @@ current: index
 
             </div>
           </div>
+           <!-- 完成預約 -->
+
           <!-- 上課注意事項 -->
           <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4 text-center">
@@ -233,6 +235,7 @@ current: index
         </div>
       </div>
     </div>
+      <!-- levelswiper -->
       <div class="p-4 p-md-9 bg-tertiary">
         <div class="container">
           <h2 class="text-white text-center mb-8">選擇課程階級</h2>
@@ -284,8 +287,7 @@ current: index
                       </div>
                       <p class="text-white mb-5">阿斯坦加、陰陽
                         <span class="badge rounded-pill bg-tertiary px-4 py-1 fs-6 ms-2">60 min</span>
-                      </p>
-                      
+                      </p>                      
                       <ul class="list-style">
                         <li>・充分打開身體每個部位</li>
                         <li>・顯著提升力量與柔軟度</li>
@@ -298,18 +300,19 @@ current: index
             <!-- swiper -->
           </div>
       </div>
-  
-
-    <div class="finalChoose mt-9" style="display: none;">
-    <div class="text-center mb-9">
-      <p class="mb-1">您選擇的是</p>
-      <div class="courseName"></div>
-    </div>
-  </div>
-  </div>
+      <div class="container">
+        <div class="finalChoose mt-9" style="display: none;">
+          <div class="text-center mb-9">
+            <p class="mb-1">您選擇的是</p>
+            <div class="courseName"></div>
+          </div>
+        </div>
+        
+      </div>
+</div>
 
   <!-- 預約須知 -->
-  <div class="container mt-8 mt-lg-9">
+  <div class="reserveRemind container mt-8 mt-lg-9">
     <div class="row justify-content-md-center">
     <div class=" col-md-8 col-lg-5">
         <div class="text-tertiary">
@@ -320,6 +323,7 @@ current: index
                 <li class="mb-1">為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
                 <li class="mb-1">DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
             </ol>
+            <a class="btn btn-secondary w-100 text-white h4" href="reservation.html">繼續預約</a>
         </div>
     </div>
     </div>
