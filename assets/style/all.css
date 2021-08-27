@@ -17396,6 +17396,10 @@ ul {
   height: 243px;
 }
 
+.h-350 {
+  height: 350px;
+}
+
 .h-420 {
   height: 420px;
 }
@@ -17429,6 +17433,11 @@ ul {
   .h-md-117 {
     height: 117px;
   }
+}
+
+.text-boxShasow {
+  -webkit-box-shadow: 1px 1px 1px 2px #f8f9fa;
+          box-shadow: 1px 1px 1px 2px #f8f9fa;
 }
 
 @media (min-width: 992px) {
@@ -17514,6 +17523,7 @@ ul {
 
 .swiper-level {
   width: 100%;
+  height: 100%;
 }
 
 .hoverBtnSecondary {
@@ -17641,6 +17651,19 @@ ul {
   background: #F5F0E7 !important;
   color: #907A7B;
   --bs-table-accent-bg: none;
+}
+
+.scrollbar-x::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-x::-webkit-scrollbar-track,
+.scrollbar-x::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #907A7B;
 }
 
 /*# sourceMappingURL=all.css.map */
