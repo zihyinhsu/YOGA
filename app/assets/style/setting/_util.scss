@@ -48,6 +48,9 @@
 .h-243{
   height: 243px;
 }
+.h-350{
+  height: 350px;
+}
 .h-420{
   height: 420px;
 }
@@ -81,6 +84,9 @@
   }
 }
 
+.text-boxShasow{
+  box-shadow: 1px 1px 1px 2px $light;
+}
 
 @include media-breakpoint-up(lg) {
   .w-lg-100{

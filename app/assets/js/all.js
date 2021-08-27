@@ -1,33 +1,35 @@
+
 $(document).ready(function () {
 
 // 立即預約-選擇課程
 
   $('.basicCourse').click(function(){ 
     $(this).toggleClass("chooseCourse").find('i').toggleClass("opacity-1");
-    $('.courseName').html('<h4 class="text-decoration-underline" style="text-underline-offset: 5px;">首次體驗課程-基礎</h4>')
+    // 自己以外的card 移除 chooseCourse樣式。
+    $(this).parent().siblings().find('.card').removeClass('chooseCourse').find('i').removeClass("opacity-1");
+    $('.finalChoose').slideUp().slideDown();
+    $('.courseName').html('<h4 class="text-decoration-underline" style="text-underline-offset: 5px;">首次體驗課程-基礎</h4>');
   })  
 
   $('.intermediateCourse').click(function(){ 
     $(this).toggleClass("chooseCourse").find('i').toggleClass("opacity-1");
-    $('.courseName').html('<h4 class="text-decoration-underline" style="text-underline-offset: 5px;">首次體驗課程-中階</h4>')
+    // 自己以外的card 移除 chooseCourse樣式。
+    $(this).parent().siblings().find('.card').removeClass('chooseCourse').find('i').removeClass("opacity-1");
+    $('.finalChoose').slideUp().slideDown();
+    $('.courseName').html('<h4 class="text-decoration-underline" style="text-underline-offset: 5px;">首次體驗課程-中階</h4>');
   })  
 
   $('.advancedCourse').click(function(){ 
     $(this).toggleClass("chooseCourse").find('i').toggleClass("opacity-1");
-    $('.courseName').html('<h4 class="text-decoration-underline" style="text-underline-offset: 5px;">首次體驗課程-高階</h4>')
+    // 自己以外的card 移除 chooseCourse樣式。
+    $(this).parent().siblings().find('.card').removeClass('chooseCourse').find('i').removeClass("opacity-1");
+    $('.finalChoose').slideUp().slideDown();
+    $('.courseName').html('<h4 class="text-decoration-underline" style="text-underline-offset: 5px;">首次體驗課程-高階</h4>');
   })  
 
-// 自己以外的card 移除 chooseCourse樣式。
-// $(this).parent().siblings().find('.card').removeClass('chooseCourse');
-
-//選擇課程階級
-// $('.projectsChoose card').click(function(){ 
-//   $(this).toggleClass("chooseCourse").find('i').toggleClass("opacity-1");
-// })  
-
+  //首次體驗 下滑出"選擇課程階級"的效果
 $('.juniorLevel').click(function(){
-  event.preventDefault();
-  $('.courseList').toggle();
+  $('.courseList').slideToggle();
 })
 
 
@@ -35,6 +37,9 @@ $('.juniorLevel').click(function(){
 //loader 頁面載完就移出
 $(window).on("load", function() {
   $(".loader").remove();
+
+  //頁面載完先把"選擇課程階級" 藏起來
+  $(".courseList").hide();
 });
 
 //swiper-course
@@ -77,8 +82,7 @@ var swiper = new Swiper('.commentSwiper', {
 
 //swiper-level
 var swiper = new Swiper('.levelSwiper', {
-  slidesPerView: 1.2,
-  // slidesPerColumn: 1,
+  slidesPerView: 1,
   slidesPerColumnFill: "row",
   spaceBetween: 30,
   breakpoints: {
@@ -86,6 +90,9 @@ var swiper = new Swiper('.levelSwiper', {
       slidesPerView: 1.8,
     },
     992:{
+      slidesPerView: 2,
+    },
+    1200:{
       slidesPerView: 3,
     },
   },
