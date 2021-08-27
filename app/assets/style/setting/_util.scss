@@ -1,0 +1,99 @@
+
+//z-index
+.z-index-0{
+  z-index: 0 !important;
+}
+
+.z-index-2{
+  z-index: 2 !important;
+}
+
+//hover
+.hoverPrimary{
+  &:hover{
+    color: $primary !important;
+  }
+}
+.hoverSecondary{
+  &:hover{
+    color: $secondary !important;
+  }
+}
+.hoverTertiary{
+  &:hover{
+    color: $tertiary !important;
+    font-weight: bold;
+  }
+}
+
+.opacity-0-5{
+  opacity: 0.5;
+}
+.opacity-1{
+  opacity: 1;
+}
+
+//font-awesome
+.fa-2-5x{
+  font-size: 40px;
+}
+
+// height
+.h-207{
+  height: 207px;
+}
+.h-210 {
+  height: 210px;
+}
+.h-243{
+  height: 243px;
+}
+.h-420{
+  height: 420px;
+}
+.h-444{
+  height: 444px;
+}
+.h-582{
+  height: 582px;
+}
+.h-628{
+  height: 628px;
+}
+
+.minw-x9\.7 {
+  min-width: 970px !important;
+}
+
+// breakpoint
+@include media-breakpoint-up(md) {
+  .fs-md-lg{
+    font-size:48px !important;
+  }
+  .h-md-266{
+    height: 266px;
+  }
+  .h-md-252{
+    height: 252px;
+  }
+  .h-md-117{
+    height: 117px;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .w-lg-100{
+    width: 100% !important;
+  }
+  .h-lg-420{
+    height: 420px;
+  }
+  .h-lg-444{
+    height: 444px;
+  }
+  .h-lg-207{
+    height: 207px;
+  }
+}
+

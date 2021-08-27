@@ -1,0 +1,16 @@
+.googleMap {
+    overflow: hidden;
+     iframe{
+         width: 100%;
+         height: 360px;
+    //    @include size(670px,456px);
+       display:block;
+       @include media-breakpoint-up(md) {
+        //  margin-top: 32px;
+        //  @include size(670px,422px);
+       }
+       @include media-breakpoint-up(md) {
+        //  @include size(670px,211px);
+       }
+    }
+  }

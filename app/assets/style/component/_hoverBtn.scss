@@ -1,0 +1,21 @@
+//heverBtn
+.hoverBtnSecondary{
+    color: $dark;
+    &:hover{
+      background-color: $secondary !important;
+      color: white;
+    }
+  }
+  
+  .hoverBtnTertiary{
+    color: $tertiary;
+    &:hover,&.active{
+      background-color: $tertiary !important;
+      color: white;
+    }
+  }
+  
+  //bg-attachment-fixed
+  .bg-attachment-fixed{
+    background-attachment: fixed;
+  }

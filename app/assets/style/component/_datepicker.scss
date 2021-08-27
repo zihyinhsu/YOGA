@@ -1,0 +1,25 @@
+
+  .datepicker-cell.selected,.datepicker-cell.focused, .datepicker-cell.selected:hover {
+    color: white;
+    background-color: $tertiary !important;
+  }
+  .datepicker-main{
+      color: $tertiary;
+  }
+
+  .datepicker-input,.datepicker-input.in-edit{
+    text-align: center;
+    width: 40%;
+    color: $tertiary;
+    border: solid 2px $tertiary;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  .datepicker-input::placeholder{
+    color: $tertiary;
+  }
+
+  .datepicker-input.in-edit:active, .datepicker-input.in-edit:focus{
+    border: solid 2px $tertiary;
+  }
