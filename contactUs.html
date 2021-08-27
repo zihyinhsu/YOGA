@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
+    <title>DOYOGA-contactUs</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
@@ -60,7 +60,64 @@
   <li><a class="text-tertiary hoverSecondary" href="#"><i class="fab fa-line fs-1 fs-md-lg"></i></a></li>
 </ul>
 
-    <%- contents %>
+    
+
+<div class="container pt-10 pt-md-12 pb-13 pb-lg-14">
+    <div class="row">
+        <div class="col">
+            <div class="text-center mb-8">
+                <h2 class="text-tertiary">聯絡我們</h2>
+            </div>  
+            <div class="row">
+                <!-- 地圖 -->
+                <div class="col-lg-7">
+                    <div class="googleMap rounded-4 mb-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8584890130237!2d120.31000531463665!3d22.621758985157573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049baa976735%3A0x4c8efdd6ed4a5ff1!2z6auY6ZuE5biC6IuT6ZuF5Y2A5YWs5omA!5e0!3m2!1szh-TW!2stw!4v1629902371980!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-9 mb-lg-0">
+                            <h4 class="text-tertiary mb-2">DOYOGA 教室位置</h4>
+                            <p class="mb-2 text-tertiary">高雄市苓雅區北信街 23 號 2 樓</p>
+                            <p class="text-tertiary">如何前往：</p>
+                            <ol class="text-tertiary ps-4">
+                                <li class="mb-6">搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
+                                <li class="mb-6">搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
+                                <li>開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
+                            </ol>
+                        </div>
+                        
+                    </div>
+                </div>
+               <div class="col-lg-5">
+                <div class="rounded-4 bg-primary p-8 h-100">
+                    <h3 class="text-tertiary h4 mb-6">意見回饋&問題詢問</h3>
+                    <form action="">
+                        <div class="mb-4">
+                            <label class="mb-2 text-tertiary" for="name1" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="name1" placeholder="請輸入您的姓名">
+                        </div>
+                        <div class="mb-4">
+                            <label class="mb-2 text-tertiary" for="email1" class="form-label">電子信箱</label>
+                            <input type="email" class="form-control" id="email1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="mb-2 text-tertiary" for="phone1" class="form-label">手機號碼</label>
+                            <input type="text" class="form-control" id="phone1" placeholder="0912-345-678">
+                        </div>
+                        <div class="mb-6">
+                            <label class="mb-2 text-tertiary" for="exampleFormControlTextarea1" class="form-label">意見回饋</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" style="height:27vh;" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-secondary text-white h5" type="button">送出</button>
+                        </div>
+                    </form>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- footer -->
 <div class="bg-tertiary text-white">
