@@ -26,6 +26,18 @@ $(document).ready(function () {
 
   $('.juniorLevel').click(function () {
     $('.courseList').slideToggle();
+  }); //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏
+
+  $('.projectBtn').click(function () {
+    $('.reserveRemind').slideDown();
+  });
+  $('.fillDataBtn').click(function () {
+    $('.reserveRemind').slideUp();
+    $('.courseList').slideUp();
+  });
+  $('.reserveBtn').click(function () {
+    $('.reserveRemind').slideUp();
+    $('.courseList').slideUp();
   }); //loader 頁面載完就移出
 
   $(window).on("load", function () {
@@ -82,6 +94,20 @@ $(document).ready(function () {
       },
       1200: {
         slidesPerView: 3
+      }
+    }
+  }); //swiper-recommend
+
+  var swiper = new Swiper('.recommendSwiper', {
+    slidesPerView: 1.5,
+    slidesPerColumnFill: "row",
+    spaceBetween: 30,
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      },
+      992: {
+        slidesPerView: 4.5
       }
     }
   }); // datepicker

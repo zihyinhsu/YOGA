@@ -17384,6 +17384,10 @@ ul {
   font-size: 40px;
 }
 
+.h-196 {
+  height: 196px;
+}
+
 .h-207 {
   height: 207px;
 }
@@ -17435,9 +17439,8 @@ ul {
   }
 }
 
-.text-boxShasow {
-  -webkit-box-shadow: 1px 1px 1px 2px #f8f9fa;
-          box-shadow: 1px 1px 1px 2px #f8f9fa;
+.text-shadow {
+  text-shadow: 0.1em 0.1em 3px #000;
 }
 
 @media (min-width: 992px) {
@@ -17493,27 +17496,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.swiper-course {
-  width: 165px;
-  height: 165px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .swiper-course {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (min-width: 992px) {
-  .swiper-course {
-    width: 445px;
-    height: 445px;
-  }
 }
 
 .swiper-prev, .swiper-next {
