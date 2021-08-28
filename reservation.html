@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css">
@@ -27,7 +27,7 @@
     </div>
 
   <!-- nav -->
-  <div class="position-sticky top-0 z-index-2">
+  <div class="position-sticky top-0 z-index-3">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
             <li class="nav-item me-lg-8">
-              <a class="nav-link text-dark hoverTertiary" aria-current="page" href="#">課程介紹</a>
+              <a class="nav-link text-dark hoverTertiary" aria-current="page" href="courseIntro.html">課程介紹</a>
             </li>
             <li class="nav-item me-lg-8">
               <a class="nav-link text-dark hoverTertiary" href="yogaSpace.html">瑜珈空間</a>
@@ -57,14 +57,14 @@
 
 <!-- 聯絡icon -->
 <ul class="contact position-fixed top-50 end-0 text-center me-4 z-index-2 d-none d-lg-block">
-  <li><a class="text-tertiary hoverSecondary mb-2" href="#"><i class="fab fa-facebook fs-1 fs-md-lg"></i></a></li>
-  <li><a class="text-tertiary hoverSecondary mb-2" href="#"><i class="fab fa-instagram fs-1 fs-md-lg"></i></a></li>
-  <li><a class="text-tertiary hoverSecondary" href="#"><i class="fab fa-line fs-1 fs-md-lg"></i></a></li>
+  <li><a class="text-tertiary rounded-circle bg-white hoverSecondary mb-2" href="#"><i class="fab fa-facebook fs-1 fs-md-lg"></i></a></li>
+  <li><a class="text-tertiary rounded-4 bg-white hoverSecondary mb-2" href="#"><i class="fab fa-instagram fs-1 fs-md-lg"></i></a></li>
+  <li><a class="text-tertiary rounded-3 bg-white hoverSecondary" href="#"><i class="fab fa-line fs-1 fs-md-lg"></i></a></li>
 </ul>
 
-    <div class="pt-10 pt-md-12 pb-13 pb-lg-14">
+    <div class="mt-10 mt-md-12 mb-13 mb-lg-14">
   <div class="container">
-      <div class="text-center mb-6">
+      <div class="text-center mb-4">
           <h2 class="text-tertiary">立即預約</h2>
       </div> 
       <ul class="revervationNav nav nav-pills row justify-content-md-center mb-8" id="pills-tab" role="tablist">
@@ -83,18 +83,18 @@
           <!-- 選擇方案 -->
           <div class="projectsChoose row">
             <div class="col-lg-4">
-              <div class="card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
+              <div class="firstTimeExp card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
                 <img class="card-img-top h-243" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" alt="...">
                 <div class="card-body text-center">
                   <h4 class="card-title text-tertiary mb-1">首次體驗</h4>
                   <p class="h4 text-secondary mb-2">NT $450 / 次</p>
                   <p class="card-text text-tertiary mb-6 mb-lg-9">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                  <a href="#courseChoose" class="juniorLevel btn btn-secondary hoverBtnTertiary w-100 h4 text-white">選擇課程</a>
+                  <a href="#courseChoose" class="firstTimeBtn btn btn-secondary hoverBtnTertiary w-100 h4 text-white">選擇課程</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
+              <div class="shortTimeExp card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
                 <img class="card-img-top h-243" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true" alt="...">
                 <div class="card-body text-center">
                   <h4 class="card-title text-tertiary mb-1">短期體驗</h4>
@@ -105,7 +105,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column">
+              <div class="longTimeExp card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column">
                 <img class="card-img-top h-243" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" alt="...">
                 <div class="card-body text-center">
                   <h4 class="card-title text-tertiary mb-1">長期體驗</h4>
@@ -285,7 +285,7 @@
       </div>
   </div>
   <!-- 選擇課程階級 -->
-  <div class="courseList" id="courseChoose">
+  <div class="courseList" id="courseChoose" style="display: none;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 text-center py-4">
@@ -296,16 +296,16 @@
       <!-- levelswiper -->
       <div class="p-4 p-md-9 bg-tertiary">
         <div class="container">
-          <h2 class="text-white text-center mb-8">選擇課程階級</h2>
+          <h2 class="text-white text-center mb-6 mb-md-8">選擇課程階級</h2>
             <!-- swiper -->
-            <div class="swiper-container levelSwiper">
+            <div class="swiper levelSwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-level d-flex flex-lg-column flex-grow-1">
+                <div class="swiper-slide d-flex flex-lg-column flex-grow-1">
                   <!-- 基礎 -->
-                  <a class="basicCourse card w-100 rounded-4 bg-secondary text-white p-6">
+                  <a class="basicCourse card w-100 rounded-4 bg-secondary text-white p-6" style="cursor: pointer;">
                     <div class="d-flex justify-content-between align-items-center">
                       <h3 class="text-white h2">基礎 Basic</h3>
-                      <i class="far fa-check-circle fs-2 opacity-0-5"></i>
+                      <i class="far fa-check-circle fs-2 opacity-0.5"></i>
                     </div>
                     <p class="text-white mb-5">基礎課程
                       <span class="badge rounded-pill bg-tertiary px-4 py-1 fs-6 ms-2">60 min</span>
@@ -318,9 +318,9 @@
                     </ul>
                   </a>
                   </div>     
-                <div class="swiper-slide swiper-level flex-grow-1">
+                <div class="swiper-slide flex-grow-1">
                   <!-- 中階 -->
-                  <a class="intermediateCourse card w-100 rounded-4 bg-secondary text-white p-6">
+                  <a class="intermediateCourse card w-100 rounded-4 bg-secondary text-white p-6" style="cursor: pointer;">
                     <div class="d-flex justify-content-between align-items-center">
                       <h3 class="text-white h2">中階 Intermediate</h3>
                       <i class="far fa-check-circle fs-2 opacity-0-5"></i>
@@ -336,9 +336,9 @@
                     </ul>
                   </a>
                 </div>
-                <div class="swiper-slide swiper-level flex-grow-1">
+                <div class="swiper-slide flex-grow-1">
                     <!-- 高階 -->
-                    <a class="advancedCourse card w-100 rounded-4 bg-secondary text-white p-6">
+                    <a class="advancedCourse card w-100 rounded-4 bg-secondary text-white p-6" style="cursor: pointer;">
                       <div class="d-flex justify-content-between align-items-center">
                         <h3 class="text-white h2">高階 Advanced</h3>
                         <i class="far fa-check-circle fs-2 opacity-0-5"></i>
@@ -409,9 +409,9 @@
           <img src="./assets/images/DOYOGA.png" alt="logo">
         </a>
       <ul class="menu">
-        <li><a class=" text-white hoverPrimary mb-2" href="#">課程介紹</a></li>
+        <li><a class=" text-white hoverPrimary mb-2" href="courseIntro.html">課程介紹</a></li>
         <li><a class=" text-white hoverPrimary mb-2" href="yogaSpace.html">瑜珈空間</a></li>
-        <li><a class=" text-white hoverPrimary" href="curriculum.html">當月課表</a></li>
+        <li><a class=" text-white hoverPrimary mb-2 mb-md-0" href="curriculum.html">當月課表</a></li>
       </ul>
       </div>
       <div class="contact">
@@ -428,7 +428,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="./assets/js/all.js"></script>

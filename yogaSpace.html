@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css">
@@ -27,7 +27,7 @@
     </div>
 
   <!-- nav -->
-  <div class="position-sticky top-0 z-index-2">
+  <div class="position-sticky top-0 z-index-3">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
             <li class="nav-item me-lg-8">
-              <a class="nav-link text-dark hoverTertiary" aria-current="page" href="#">課程介紹</a>
+              <a class="nav-link text-dark hoverTertiary" aria-current="page" href="courseIntro.html">課程介紹</a>
             </li>
             <li class="nav-item me-lg-8">
               <a class="nav-link text-dark hoverTertiary" href="yogaSpace.html">瑜珈空間</a>
@@ -57,12 +57,12 @@
 
 <!-- 聯絡icon -->
 <ul class="contact position-fixed top-50 end-0 text-center me-4 z-index-2 d-none d-lg-block">
-  <li><a class="text-tertiary hoverSecondary mb-2" href="#"><i class="fab fa-facebook fs-1 fs-md-lg"></i></a></li>
-  <li><a class="text-tertiary hoverSecondary mb-2" href="#"><i class="fab fa-instagram fs-1 fs-md-lg"></i></a></li>
-  <li><a class="text-tertiary hoverSecondary" href="#"><i class="fab fa-line fs-1 fs-md-lg"></i></a></li>
+  <li><a class="text-tertiary rounded-circle bg-white hoverSecondary mb-2" href="#"><i class="fab fa-facebook fs-1 fs-md-lg"></i></a></li>
+  <li><a class="text-tertiary rounded-4 bg-white hoverSecondary mb-2" href="#"><i class="fab fa-instagram fs-1 fs-md-lg"></i></a></li>
+  <li><a class="text-tertiary rounded-3 bg-white hoverSecondary" href="#"><i class="fab fa-line fs-1 fs-md-lg"></i></a></li>
 </ul>
 
-    
+    <!-- 瑜珈空間 -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col">
@@ -152,9 +152,9 @@
             <div class="col">
                 <h2 class="text-center text-tertiary mb-8">課程推薦</h2>
                 <!-- swiper -->
-                <div class="swiper-container recommendSwiper">
+                <div class="swiper recommendSwiper">
                     <div class="swiper-wrapper ">
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                 <img class="rounded-4 h-196" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg" alt="">
@@ -165,7 +165,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1574454941059-9408c4d3f268%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjI5NzY5MDY1%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080" alt="">
@@ -176,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true" alt="">
@@ -187,7 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" alt="">
@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/two%20woman%20dong%20fitness%20exercise.jpg?raw=true" alt="">
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga.jpg?raw=true" alt="">
@@ -220,7 +220,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20pants%20bending%20her%20body%20by%20the%20window.jpg?raw=true" alt="">
@@ -231,7 +231,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-recommend">
+                        <div class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" alt="">
@@ -250,6 +250,7 @@
     </div>
 
 </div>
+
 
 
 <!-- footer -->
@@ -273,9 +274,9 @@
           <img src="./assets/images/DOYOGA.png" alt="logo">
         </a>
       <ul class="menu">
-        <li><a class=" text-white hoverPrimary mb-2" href="#">課程介紹</a></li>
+        <li><a class=" text-white hoverPrimary mb-2" href="courseIntro.html">課程介紹</a></li>
         <li><a class=" text-white hoverPrimary mb-2" href="yogaSpace.html">瑜珈空間</a></li>
-        <li><a class=" text-white hoverPrimary" href="curriculum.html">當月課表</a></li>
+        <li><a class=" text-white hoverPrimary mb-2 mb-md-0" href="curriculum.html">當月課表</a></li>
       </ul>
       </div>
       <div class="contact">
@@ -292,7 +293,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="./assets/js/all.js"></script>

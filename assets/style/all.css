@@ -17312,6 +17312,45 @@ fieldset:disabled .btn {
           transform: translateX(-50%) translateY(-50%);
 }
 
+.logo {
+  display: block;
+  /*使a成為區塊元素可以長寬高*/
+  background: url(https://i.imgur.com/sXCLS9Y.png) no-repeat;
+  /*設定要使用的圖片，且不要重複*/
+  width: 96px;
+  /*需求的寬度*/
+  height: 31px;
+  /*需求的高度*/
+  text-indent: 101%;
+  /*讓文字首行縮排到範圍外*/
+  overflow: hidden;
+  /*超過範圍的就自動隱藏*/
+  white-space: nowrap;
+  /*不要斷行就一排，所以只有"首行"*/
+  background-size: cover;
+}
+
+.googleMap {
+  overflow: hidden;
+}
+
+.googleMap iframe {
+  width: 100%;
+  height: 360px;
+  display: block;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10 !important;
+}
+
+.line-scale-party > div {
+  background-color: #907A7B;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17359,20 +17398,15 @@ ul {
   z-index: 2 !important;
 }
 
-.hoverPrimary:hover {
-  color: #F5F0E7 !important;
+.z-index-3 {
+  z-index: 3 !important;
 }
 
-.hoverSecondary:hover {
-  color: #C0A4A5 !important;
+.bg-attachment-fixed {
+  background-attachment: fixed;
 }
 
-.hoverTertiary:hover {
-  color: #907A7B !important;
-  font-weight: bold;
-}
-
-.opacity-0-5 {
+.opacity-0\.5 {
   opacity: 0.5;
 }
 
@@ -17380,8 +17414,16 @@ ul {
   opacity: 1;
 }
 
-.fa-2-5x {
-  font-size: 40px;
+.text-shadow {
+  text-shadow: 0.05em 0.08em 2px #000;
+}
+
+.start-13 {
+  left: 13%;
+}
+
+.start-18 {
+  left: 18%;
 }
 
 .h-196 {
@@ -17394,6 +17436,10 @@ ul {
 
 .h-210 {
   height: 210px;
+}
+
+.h-218 {
+  height: 218px;
 }
 
 .h-243 {
@@ -17420,13 +17466,12 @@ ul {
   height: 628px;
 }
 
-.minw-x9\.7 {
-  min-width: 970px !important;
-}
-
 @media (min-width: 768px) {
   .fs-md-lg {
     font-size: 48px !important;
+  }
+  .h-md-117 {
+    height: 117px;
   }
   .h-md-266 {
     height: 266px;
@@ -17434,16 +17479,15 @@ ul {
   .h-md-252 {
     height: 252px;
   }
-  .h-md-117 {
-    height: 117px;
+  .h-md-auto {
+    height: auto;
   }
 }
 
-.text-shadow {
-  text-shadow: 0.1em 0.1em 3px #000;
-}
-
 @media (min-width: 992px) {
+  .overflow-lg-hidden {
+    overflow: hidden !important;
+  }
   .w-lg-100 {
     width: 100% !important;
   }
@@ -17463,49 +17507,17 @@ ul {
   border: 4px solid white;
 }
 
-.logo {
-  display: block;
-  /*使a成為區塊元素可以長寬高*/
-  background: url(https://i.imgur.com/sXCLS9Y.png) no-repeat;
-  /*設定要使用的圖片，且不要重複*/
-  width: 96px;
-  /*需求的寬度*/
-  height: 31px;
-  /*需求的高度*/
-  text-indent: 101%;
-  /*讓文字首行縮排到範圍外*/
-  overflow: hidden;
-  /*超過範圍的就自動隱藏*/
-  white-space: nowrap;
-  /*不要斷行就一排，所以只有"首行"*/
-  background-size: cover;
+.hoverPrimary:hover {
+  color: #F5F0E7 !important;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.hoverSecondary:hover {
+  color: #C0A4A5 !important;
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.swiper-prev, .swiper-next {
-  position: static;
-  margin-top: 16px;
-}
-
-.swiper-level {
-  width: 100%;
-  height: 100%;
+.hoverTertiary:hover {
+  color: #907A7B !important;
+  font-weight: bold;
 }
 
 .hoverBtnSecondary {
@@ -17524,10 +17536,6 @@ ul {
 .hoverBtnTertiary:hover, .hoverBtnTertiary.active {
   background-color: #907A7B !important;
   color: white;
-}
-
-.bg-attachment-fixed {
-  background-attachment: fixed;
 }
 
 .form-check-input:checked {
@@ -17608,27 +17616,6 @@ ul {
   border: solid 2px #907A7B;
 }
 
-.googleMap {
-  overflow: hidden;
-}
-
-.googleMap iframe {
-  width: 100%;
-  height: 360px;
-  display: block;
-}
-
-.loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 10 !important;
-}
-
-.line-scale-party > div {
-  background-color: #907A7B;
-}
-
 .table-active {
   background: #F5F0E7 !important;
   color: #907A7B;
@@ -17642,6 +17629,10 @@ ul {
 .scrollbar-x::-webkit-scrollbar-track,
 .scrollbar-x::-webkit-scrollbar-thumb {
   border-radius: 3px;
+}
+
+.scrollbar-x::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
 }
 
 ::-webkit-scrollbar-thumb {
