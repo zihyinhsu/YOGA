@@ -2,15 +2,15 @@
       height: 8px;
   }
   
-  .scrollbar-x::-webkit-scrollbar-track,
-  .scrollbar-x::-webkit-scrollbar-thumb {
-      border-radius: 3px;
-  }
-  
-//   ::-webkit-scrollbar-track {
-//       background-color: #ccc;
-//   }
-  
-  ::-webkit-scrollbar-thumb {
-      background-color: $tertiary;
-  }
+.scrollbar-x::-webkit-scrollbar-track,
+.scrollbar-x::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+}
+
+.scrollbar-x::-webkit-scrollbar-track {
+    background-color: $light;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $tertiary;
+}

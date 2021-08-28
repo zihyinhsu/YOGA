@@ -1,0 +1,36 @@
+
+//hover
+.hoverPrimary{
+  &:hover{
+    color: $primary !important;
+  }
+}
+.hoverSecondary{
+  &:hover{
+    color: $secondary !important;
+  }
+}
+.hoverTertiary{
+  &:hover{
+    color: $tertiary !important;
+    font-weight: bold;
+  }
+}
+
+//heverBtn
+.hoverBtnSecondary{
+    color: $dark;
+    &:hover{
+      background-color: $secondary !important;
+      color: white;
+    }
+  }
+  
+.hoverBtnTertiary{
+  color: $tertiary;
+  &:hover,&.active{
+    background-color: $tertiary !important;
+    color: white;
+  }
+}
+  

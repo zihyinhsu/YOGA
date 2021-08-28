@@ -4,9 +4,9 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="pt-10 pt-md-12 pb-13 pb-lg-14">
+<div class="mt-10 mt-md-12 mb-13 mb-lg-14">
   <div class="container">
-      <div class="text-center mb-6">
+      <div class="text-center mb-4">
           <h2 class="text-tertiary">立即預約</h2>
       </div> 
       <ul class="revervationNav nav nav-pills row justify-content-md-center mb-8" id="pills-tab" role="tablist">
@@ -25,18 +25,18 @@ current: index
           <!-- 選擇方案 -->
           <div class="projectsChoose row">
             <div class="col-lg-4">
-              <div class="card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
+              <div class="firstTimeExp card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
                 <img class="card-img-top h-243" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" alt="...">
                 <div class="card-body text-center">
                   <h4 class="card-title text-tertiary mb-1">首次體驗</h4>
                   <p class="h4 text-secondary mb-2">NT $450 / 次</p>
                   <p class="card-text text-tertiary mb-6 mb-lg-9">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                  <a href="#courseChoose" class="juniorLevel btn btn-secondary hoverBtnTertiary w-100 h4 text-white">選擇課程</a>
+                  <a href="#courseChoose" class="firstTimeBtn btn btn-secondary hoverBtnTertiary w-100 h4 text-white">選擇課程</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
+              <div class="shortTimeExp card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column mb-6 mb-lg-0">
                 <img class="card-img-top h-243" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true" alt="...">
                 <div class="card-body text-center">
                   <h4 class="card-title text-tertiary mb-1">短期體驗</h4>
@@ -47,7 +47,7 @@ current: index
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column">
+              <div class="longTimeExp card border-secondary border-2 w-100 rounded-4 overflow-hidden flex-column flex-md-row flex-lg-column">
                 <img class="card-img-top h-243" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" alt="...">
                 <div class="card-body text-center">
                   <h4 class="card-title text-tertiary mb-1">長期體驗</h4>
@@ -227,7 +227,7 @@ current: index
       </div>
   </div>
   <!-- 選擇課程階級 -->
-  <div class="courseList" id="courseChoose">
+  <div class="courseList" id="courseChoose" style="display: none;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 text-center py-4">
@@ -238,16 +238,16 @@ current: index
       <!-- levelswiper -->
       <div class="p-4 p-md-9 bg-tertiary">
         <div class="container">
-          <h2 class="text-white text-center mb-8">選擇課程階級</h2>
+          <h2 class="text-white text-center mb-6 mb-md-8">選擇課程階級</h2>
             <!-- swiper -->
-            <div class="swiper-container levelSwiper">
+            <div class="swiper levelSwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-level d-flex flex-lg-column flex-grow-1">
+                <div class="swiper-slide d-flex flex-lg-column flex-grow-1">
                   <!-- 基礎 -->
-                  <a class="basicCourse card w-100 rounded-4 bg-secondary text-white p-6">
+                  <a class="basicCourse card w-100 rounded-4 bg-secondary text-white p-6" style="cursor: pointer;">
                     <div class="d-flex justify-content-between align-items-center">
                       <h3 class="text-white h2">基礎 Basic</h3>
-                      <i class="far fa-check-circle fs-2 opacity-0-5"></i>
+                      <i class="far fa-check-circle fs-2 opacity-0.5"></i>
                     </div>
                     <p class="text-white mb-5">基礎課程
                       <span class="badge rounded-pill bg-tertiary px-4 py-1 fs-6 ms-2">60 min</span>
@@ -260,9 +260,9 @@ current: index
                     </ul>
                   </a>
                   </div>     
-                <div class="swiper-slide swiper-level flex-grow-1">
+                <div class="swiper-slide flex-grow-1">
                   <!-- 中階 -->
-                  <a class="intermediateCourse card w-100 rounded-4 bg-secondary text-white p-6">
+                  <a class="intermediateCourse card w-100 rounded-4 bg-secondary text-white p-6" style="cursor: pointer;">
                     <div class="d-flex justify-content-between align-items-center">
                       <h3 class="text-white h2">中階 Intermediate</h3>
                       <i class="far fa-check-circle fs-2 opacity-0-5"></i>
@@ -278,9 +278,9 @@ current: index
                     </ul>
                   </a>
                 </div>
-                <div class="swiper-slide swiper-level flex-grow-1">
+                <div class="swiper-slide flex-grow-1">
                     <!-- 高階 -->
-                    <a class="advancedCourse card w-100 rounded-4 bg-secondary text-white p-6">
+                    <a class="advancedCourse card w-100 rounded-4 bg-secondary text-white p-6" style="cursor: pointer;">
                       <div class="d-flex justify-content-between align-items-center">
                         <h3 class="text-white h2">高階 Advanced</h3>
                         <i class="far fa-check-circle fs-2 opacity-0-5"></i>

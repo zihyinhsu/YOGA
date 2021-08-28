@@ -3,39 +3,37 @@
 .z-index-0{
   z-index: 0 !important;
 }
-
 .z-index-2{
   z-index: 2 !important;
 }
-
-//hover
-.hoverPrimary{
-  &:hover{
-    color: $primary !important;
-  }
-}
-.hoverSecondary{
-  &:hover{
-    color: $secondary !important;
-  }
-}
-.hoverTertiary{
-  &:hover{
-    color: $tertiary !important;
-    font-weight: bold;
-  }
+.z-index-3{
+  z-index: 3 !important;
 }
 
-.opacity-0-5{
+//bg-attachment-fixed
+.bg-attachment-fixed{
+  background-attachment: fixed;
+}
+
+//opacity
+.opacity-0\.5{
   opacity: 0.5;
 }
 .opacity-1{
   opacity: 1;
 }
 
-//font-awesome
-.fa-2-5x{
-  font-size: 40px;
+// text-shadow
+.text-shadow{
+  text-shadow: 0.05em 0.08em 2px $black;
+}
+
+.start-13{
+  left: 13%;
+}
+
+.start-18{
+  left: 18%;
 }
 
 // height
@@ -48,12 +46,19 @@
 .h-210 {
   height: 210px;
 }
+.h-218{
+  height: 218px;
+}
+
+
 .h-243{
   height: 243px;
 }
+
 .h-350{
   height: 350px;
 }
+
 .h-420{
   height: 420px;
 }
@@ -67,14 +72,14 @@
   height: 628px;
 }
 
-.minw-x9\.7 {
-  min-width: 970px !important;
-}
 
 // breakpoint
 @include media-breakpoint-up(md) {
   .fs-md-lg{
     font-size:48px !important;
+  }
+  .h-md-117{
+    height: 117px;
   }
   .h-md-266{
     height: 266px;
@@ -82,16 +87,17 @@
   .h-md-252{
     height: 252px;
   }
-  .h-md-117{
-    height: 117px;
+  .h-md-auto{
+    height: auto;
   }
-}
 
-.text-shadow{
-  text-shadow: 0.1em 0.1em 3px $black;
 }
 
 @include media-breakpoint-up(lg) {
+  .overflow-lg-hidden{
+    overflow: hidden !important;
+  }
+
   .w-lg-100{
     width: 100% !important;
   }
