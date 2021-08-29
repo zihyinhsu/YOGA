@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
   // 立即預約-選擇課程
-$('.basicCourse,.intermediateCourse,.advancedCourse').click(function(){ 
+$('.levelSwiper a').click(function(){ 
   $(this).toggleClass("chooseCourse").find('i').toggleClass("opacity-1");
   // 自己以外的card 移除 chooseCourse樣式。
   $(this).parent().siblings().find('.card').removeClass('chooseCourse').find('i').removeClass("opacity-1");
@@ -22,7 +22,9 @@ $('.advancedCourse').click(function(){
 $('.firstTimeBtn').click(function(){
   $('.courseList,.keepReserveBtn').slideToggle();
   //把其他兩個卡片藏起來
-  $('.shortTimeExp,.longTimeExp').addClass('d-none').addClass('d-lg-block');
+  $('.shortTimeExp,.longTimeExp').addClass('d-none d-lg-block');
+  // 做出粗框效果
+  $('.firstTimeExp').toggleClass('border-4');
 })
 
 //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏
@@ -146,7 +148,28 @@ const swiper = new Swiper(".recommendSwiper", {
 });
 }
 
-
+//teacherSwiper
+const teacherSwiper = document.querySelector('.teacherSwiper');
+if (teacherSwiper) {
+const swiper = new Swiper(".teacherSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+  },
+  grid: {
+    fill: 'row',
+  },
+  breakpoints: {
+    768:{
+      slidesPerView: 2.2,
+    },
+    992:{
+      slidesPerView: 3.2,
+    },
+  }
+});
+}
 
 // datepicker 日期選擇器
 const elem = document.querySelector('input[name="datepicker"]');

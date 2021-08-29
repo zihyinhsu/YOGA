@@ -1,0 +1,26 @@
+//_modal.scss
+.course-modal-width{
+    max-width: 345px;
+    @include media-breakpoint-up(md){
+        max-width: 690px;
+    }
+    @include media-breakpoint-up(lg){
+        max-width:920px;
+    }
+}
+
+//modal-size
+.wh-165{
+    height: 165px;
+    width: 165px;
+  }
+
+@include media-breakpoint-up(md) {
+  .wh-md-418{
+    width: 100%;
+    height: 418px;
+    @include media-breakpoint-up(lg) {
+    min-width: 418px;
+    }
+  }
+}

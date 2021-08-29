@@ -1,18 +1,11 @@
-
-//z-index
-.z-index-0{
-  z-index: 0 !important;
-}
-.z-index-2{
-  z-index: 2 !important;
-}
-.z-index-3{
-  z-index: 3 !important;
-}
-
 //bg-attachment-fixed
 .bg-attachment-fixed{
   background-attachment: fixed;
+}
+
+//fa-2.5x
+.fa-2\.5x{
+  font-size: 40px;
 }
 
 //opacity
@@ -28,15 +21,15 @@
   text-shadow: 0.05em 0.08em 2px $black;
 }
 
-.start-13{
-  left: 13%;
-}
-
-.start-18{
-  left: 18%;
+//left
+.start-0\.63{
+  left: 63px;
 }
 
 // height
+.h-96{
+  height: 96px;
+}
 .h-196{
   height: 196px;
 }
@@ -49,16 +42,12 @@
 .h-218{
   height: 218px;
 }
-
-
 .h-243{
   height: 243px;
 }
-
 .h-350{
   height: 350px;
 }
-
 .h-420{
   height: 420px;
 }
@@ -75,29 +64,29 @@
 
 // breakpoint
 @include media-breakpoint-up(md) {
-  .fs-md-lg{
-    font-size:48px !important;
-  }
   .h-md-117{
     height: 117px;
-  }
-  .h-md-266{
-    height: 266px;
   }
   .h-md-252{
     height: 252px;
   }
-  .h-md-auto{
-    height: auto;
+  .h-md-266{
+    height: 266px;
   }
 
+  .h-md-auto{
+    height: auto !important;
+  }
+
+  .fs-md-lg{
+    font-size:48px !important;
+  }
 }
 
 @include media-breakpoint-up(lg) {
   .overflow-lg-hidden{
     overflow: hidden !important;
   }
-
   .w-lg-100{
     width: 100% !important;
   }
@@ -111,4 +100,3 @@
     height: 207px;
   }
 }
-
