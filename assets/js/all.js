@@ -1,7 +1,25 @@
 "use strict";
 
 $(document).ready(function () {
-  // 立即預約-選擇課程
+  //Aos
+  AOS.init({
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120,
+    // offset (in px) from the original trigger point
+    delay: 0,
+    // values from 0 to 3000, with step 50ms
+    duration: 400,
+    // values from 0 to 3000, with step 50ms
+    easing: 'ease',
+    // default easing for AOS animations
+    once: false,
+    // whether animation should happen only once - while scrolling down
+    mirror: false,
+    // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
+
+  }); // 立即預約-選擇課程
+
   $('.levelSwiper a').click(function () {
     $(this).toggleClass("chooseCourse").find('i').toggleClass("opacity-1"); // 自己以外的card 移除 chooseCourse樣式。
 
@@ -21,7 +39,7 @@ $(document).ready(function () {
   $('.firstTimeBtn').click(function () {
     $('.courseList,.keepReserveBtn').slideToggle(); //把其他兩個卡片藏起來
 
-    $('.shortTimeExp,.longTimeExp').addClass('d-none d-lg-block'); // 做出粗框效果
+    $('.shortTimeExp,.longTimeExp').toggleClass('d-none d-lg-block'); // 做出粗框效果
 
     $('.firstTimeExp').toggleClass('border-4');
   }); //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏

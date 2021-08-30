@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -27,7 +28,7 @@
     </div>
 
   <!-- nav -->
-  <div class="position-sticky top-0 z-index-3">
+  <div class="header position-sticky top-0 z-index-3">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -36,18 +37,16 @@
         <button class="navbar-toggler border-0 p-0" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+          <ul class="menu navbar-nav m-auto mb-2 mb-lg-0 ">
             <li class="nav-item me-lg-8">
-              <a class="nav-link text-dark hoverTertiary" aria-current="page" href="courseIntro.html">課程介紹</a>
+              <a class="nav-link hoverTertiary" aria-current="page" href="courseIntro.html">課程介紹</a>
             </li>
             <li class="nav-item me-lg-8">
-              <a class="nav-link text-dark hoverTertiary" href="yogaSpace.html">瑜珈空間</a>
+              <a class="nav-link hoverTertiary" href="yogaSpace.html">瑜珈空間</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-dark hoverTertiary" href="curriculum.html">當月課表</a>
+              <a class="nav-link hoverTertiary" href="curriculum.html">當月課表</a>
             </li>
           </ul>
           <a class="btn btn-primary border border-tertiary rounded-4 me-2 hoverBtnTertiary" href="reservation.html">立即預約</a>
@@ -72,20 +71,20 @@
                 <h2 class="text-center text-tertiary mb-6 mb-md-8">瑜珈空間</h2>
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="card border-0 p-0 mb-6">
-                        <img class="rounded-4 w-100 h-350" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/blue%20swimming%20pool%20near%20green%20potted%20plant.jpg?raw=true" alt="團體課教室">
-                        <div class="card-img-overlay p-0 m-6 d-flex flex-column justify-content-end">
-                            <h2 class="text-shadow text-white mb-1">A、B 團體課教室</h4>
-                            <p class="text-shadow text-white">教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
-                          </div>   
+                        <div class="picHover card rounded-4 border-0 p-0 mb-6">
+                            <img class="w-100 h-350" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/blue%20swimming%20pool%20near%20green%20potted%20plant.jpg?raw=true" alt="團體課教室">
+                            <div class="position-absolute bottom-0 m-6 d-flex flex-column justify-content-end">
+                                <h2 class="text-shadow text-white mb-1">A、B 團體課教室</h4>
+                                <p class="text-shadow text-white">教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
+                            </div>   
                         </div>
                         <div class="row mb-8 mb-md-0">
                             <div class="col-md-6">
                                 <div class="card border-0 p-0 mb-4 mb-md-6">
-                                    <div class="ratio ratio-1x1">
-                                        <img class="rounded-4 w-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg?raw=true" alt="">
+                                    <div class="picHover rounded-4 ratio ratio-1x1">
+                                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg?raw=true" alt="">
                                     </div>
-                                      <div class="card-img-overlay p-0 m-6 d-flex flex-column justify-content-end">
+                                      <div class="position-absolute bottom-0 m-6 d-flex flex-column justify-content-end">
                                         <h2 class="text-shadow text-white mb-1">C、D 個人訓練室</h4>
                                         <p class="text-shadow text-white">C、D 個人訓練室</p>
                                       </div>   
@@ -93,10 +92,10 @@
                                 </div>
                             <div class="col-md-6">
                                 <div class="card border-0 p-0 mb-4 mb-md-6">
-                                    <div class="ratio ratio-1x1">
-                                        <img class="rounded-4 w-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/white%20ceramic%20sink%20near%20white%20ceramic%20sink.jpg?raw=true" alt="">
+                                    <div class="picHover rounded-4  ratio ratio-1x1">
+                                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/white%20ceramic%20sink%20near%20white%20ceramic%20sink.jpg?raw=true" alt="">
                                     </div>
-                                      <div class="card-img-overlay p-0 m-6 d-flex flex-column justify-content-end">
+                                      <div class="position-absolute bottom-0 m-6 d-flex flex-column justify-content-end">
                                         <h2 class="text-shadow text-white mb-1">淋浴間</h4>
                                         <p class="text-shadow text-white">開放時間：每週一至週日 09:00~21:30</p>
                                       </div>   
@@ -104,10 +103,10 @@
                                 </div>
                             <div class="col-md-6 ">
                                 <div class="card border-0 p-0 mb-4 mb-md-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img class="rounded-4 w-100" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20blue%20denim%20jeans%20doing%20yoga.jpg" alt="">
+                                    <div class="picHover rounded-4  ratio ratio-1x1">
+                                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20blue%20denim%20jeans%20doing%20yoga.jpg" alt="">
                                     </div>
-                                      <div class="card-img-overlay p-0 m-6 d-flex flex-column justify-content-end">
+                                      <div class="position-absolute bottom-0 m-6 d-flex flex-column justify-content-end">
                                         <h2 class="text-shadow text-white mb-1">器材出租</h4>
                                         <p class="text-shadow text-white">有租借需求請至櫃檯登記</p>
                                       </div>   
@@ -115,10 +114,10 @@
                                 </div>
                             <div class="col-md-6">
                                 <div class="card border-0 p-0 mb-4 mb-md-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img class="rounded-4 w-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/sittin%20people%20beside%20table%20inside%20room.jpg?raw=true" alt="">
+                                    <div class="picHover rounded-4  ratio ratio-1x1">
+                                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/sittin%20people%20beside%20table%20inside%20room.jpg?raw=true" alt="">
                                     </div>
-                                      <div class="card-img-overlay p-0 m-6 d-flex flex-column justify-content-end">
+                                      <div class="position-absolute bottom-0 m-6 d-flex flex-column justify-content-end">
                                         <h2 class="text-shadow text-white mb-1">交誼廳</h4>
                                         <p class="text-shadow text-white">開放時間：每週一至週五 09:00~21:30</p>
                                       </div>   
@@ -155,8 +154,8 @@
                 <h2 class="text-center text-tertiary mb-8">課程推薦</h2>
                 <!-- swiper -->
                 <div class="swiper recommendSwiper">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide">
+                    <ul class="swiper-wrapper ">
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                 <img class="rounded-4 h-196" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg" alt="">
@@ -166,8 +165,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1574454941059-9408c4d3f268%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjI5NzY5MDY1%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080" alt="">
@@ -177,8 +176,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true" alt="">
@@ -188,8 +187,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" alt="">
@@ -199,8 +198,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/two%20woman%20dong%20fitness%20exercise.jpg?raw=true" alt="">
@@ -210,8 +209,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga.jpg?raw=true" alt="">
@@ -221,8 +220,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20pants%20bending%20her%20body%20by%20the%20window.jpg?raw=true" alt="">
@@ -232,8 +231,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </li>
+                        <li class="swiper-slide">
                             <div class="swipe-item w-100 h-100">
                                 <div class="card border-0 bg-transparent">
                                     <img class="rounded-4 h-196" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" alt="">
@@ -243,8 +242,8 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 <!-- swiper -->
             </div>
@@ -296,6 +295,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="./assets/js/all.js"></script>
