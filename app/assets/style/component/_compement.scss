@@ -2,3 +2,10 @@
     opacity: 1 !important;
     border: 4px solid white;
 }
+
+.activeTertiary{
+    &.active{
+        background-color: $tertiary !important;
+        color: white !important;
+    }
+}

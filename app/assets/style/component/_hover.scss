@@ -27,7 +27,7 @@
   
 .hoverBtnTertiary{
   color: $tertiary;
-  &:hover,&.active{
+  &:hover{
     background-color: $tertiary !important;
     color: white !important;
   }
