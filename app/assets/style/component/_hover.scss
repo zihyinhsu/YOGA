@@ -13,7 +13,6 @@
 .hoverTertiary{
   &:hover{
     color: $tertiary !important;
-    font-weight: bold;
   }
 }
 
@@ -30,7 +29,16 @@
   color: $tertiary;
   &:hover,&.active{
     background-color: $tertiary !important;
-    color: white;
+    color: white !important;
   }
 }
-  
+// picHover
+.picHover{
+  overflow:hidden;
+  img{
+      transition: all 0.5s ease-out;
+      &:hover{
+          transform:scale(1.2,1.2);
+      }
+  }
+}
