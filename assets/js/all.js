@@ -42,12 +42,16 @@ $(document).ready(function () {
     $('.shortTimeExp,.longTimeExp').toggleClass('d-none d-lg-block'); // 做出粗框效果
 
     $('.firstTimeExp').toggleClass('border-4');
+  }); //點繼續預約到下一個頁面
+
+  $('.keepReserveBtn').click(function () {
+    $('.fillDataPage').click().removeClass('disabled').addClass('active').parent().siblings().find('.activeTertiary').removeClass('active').addClass('disabled');
   }); //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏
 
-  $('.projectBtn').click(function () {
+  $('.projectPage').click(function () {
     $('.reserveRemind').slideDown();
   });
-  $('.fillDataBtn,.reserveBtn').click(function () {
+  $('.fillDataPage,.reservePage').click(function () {
     $('.reserveRemind,.courseList').slideUp();
   }); //loader 頁面載完就移出
 
