@@ -45,7 +45,17 @@ $(document).ready(function () {
   }); //點繼續預約到下一個頁面
 
   $('.keepReserveBtn').click(function () {
+    // tab 的顯示切換是透過 show, active
+    $('#fillData').addClass('show active');
+    $('#chooseProject').removeClass('show active');
     $('.fillDataPage').click().removeClass('disabled').addClass('active').parent().siblings().find('.activeTertiary').removeClass('active').addClass('disabled');
+  }); //點送出資料到完成預約頁面
+
+  $('.sendDataBtn').click(function () {
+    // tab 的顯示切換是透過 show, active
+    $('#reserve').addClass('show active');
+    $('#fillData').removeClass('show active');
+    $('.reservePage').click().removeClass('disabled').addClass('active').parent().siblings().find('.activeTertiary').removeClass('active').addClass('disabled');
   }); //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏
 
   $('.projectPage').click(function () {
