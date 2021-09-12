@@ -17480,8 +17480,8 @@ ul {
   height: 628px;
 }
 
-@media (max-width: 767.98px) {
-  .p-md-down-0 {
+@media (max-width: 991.98px) {
+  .p-lg-down-0 {
     padding: 0;
   }
 }

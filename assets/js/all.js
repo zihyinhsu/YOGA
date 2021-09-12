@@ -12,7 +12,7 @@ $(document).ready(function () {
     // values from 0 to 3000, with step 50ms
     easing: 'ease',
     // default easing for AOS animations
-    once: false,
+    once: true,
     // whether animation should happen only once - while scrolling down
     mirror: false,
     // whether elements should animate out while scrolling past them
@@ -140,14 +140,12 @@ $(document).ready(function () {
       },
       breakpoints: {
         768: {
-          slidesPerView: 1.5 // loop: true,
+          slidesPerView: 2 // loop: true,
 
         },
-        992: {
-          slidesPerView: 2
-        },
         1200: {
-          slidesPerView: 3
+          slidesPerView: 3,
+          spaceBetween: 20
         }
       }
     });
