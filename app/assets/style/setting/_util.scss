@@ -1,6 +1,9 @@
+
 //bg-attachment-fixed
-.bg-attachment-fixed{
+.bg-attachment-md-fixed{
+  @include media-breakpoint-up(md) {
   background-attachment: fixed;
+  }
 }
 
 //fas icon
@@ -74,6 +77,14 @@
 
 
 // breakpoint
+
+//md以下做改變
+@include media-breakpoint-down(lg) {
+  .p-lg-down-0{
+    padding: 0;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .h-md-117{
     height: 117px;
