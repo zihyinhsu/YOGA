@@ -17402,8 +17402,10 @@ ul {
   margin: 0;
 }
 
-.bg-attachment-fixed {
-  background-attachment: fixed;
+@media (min-width: 768px) {
+  .bg-attachment-md-fixed {
+    background-attachment: fixed;
+  }
 }
 
 .fas {
@@ -17476,6 +17478,12 @@ ul {
 
 .h-628 {
   height: 628px;
+}
+
+@media (max-width: 767.98px) {
+  .p-md-down-0 {
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
